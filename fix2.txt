@@ -1,0 +1,39 @@
+ mkdir Labb1-Git-Extra
+ cd Labb1-Git-Extra
+ git init
+ touch README.md
+ vi README.md
+ git add .
+ git commit -m "initial commit"
+ git switch -c feature1
+ vi README.md
+ git add .
+ git commit -m "added dog and changed moose to mouse"
+ git switch main
+ vi README.md
+ git commit -a -m "changed moose to mahmut"
+ git merge feature1
+ vi README.md
+ git commit -a -m "solved conflicts"
+ git tag -a tag1 -m "extinct"
+ git reset --hard HEAD~1
+ git status
+ git log --oneline
+ vi README.md
+ git branch feature2
+ vi README.md
+ git add .
+ git commit -m "capital letter"
+ git switch feature2
+ touch fix1.txt
+ git add .
+ git commit -m "fix1"
+ touch fix2.txt
+ git add .
+ git commit -m "fix2"
+ git switch main
+ ls
+ git cherry-pick 0f967a0
+ git remote add origin "min github-länk"
+ git push -u origin main
+
